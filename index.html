@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Butterios Holiday Decor Shop</title>
+  <meta name="description" content="Butterios - festive home decorations for every U.S. holiday season." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="announcement">Free U.S. shipping on orders over $49 | Spring Sale: Up to 30% Off</header>
+
+  <nav class="nav">
+    <div class="brand">BUTTERIOS</div>
+    <div class="nav-links">
+      <a href="#shop">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#about">About</a>
+    </div>
+    <button id="cartBtn" class="cart-btn" aria-label="Open shopping cart">Cart (<span id="cartCount">0</span>)</button>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">U.S. Holiday Home Style</p>
+        <h1>Decor that turns every season into a celebration</h1>
+        <p>From cozy Thanksgiving tables to sparkling Christmas nights, Butterios helps American homes celebrate in style.</p>
+        <a href="#shop" class="cta">Shop New Arrivals</a>
+      </div>
+      <div class="hero-card">
+        <h3>Limited Offer</h3>
+        <p>Buy 2 get 1 on spring wreaths</p>
+        <p class="small">Ends March 31, 2026</p>
+      </div>
+    </section>
+
+    <section id="categories" class="categories">
+      <h2>Shop by Holiday</h2>
+      <div id="categoryFilters" class="chips"></div>
+    </section>
+
+    <section id="shop" class="shop">
+      <div class="shop-header">
+        <h2>Featured Decor</h2>
+        <input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products" />
+      </div>
+      <div id="productGrid" class="product-grid"></div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>Why U.S. shoppers choose Butterios</h2>
+      <div class="about-grid">
+        <article>
+          <h3>Fast fulfillment</h3>
+          <p>Ships from U.S. warehouses in 24-48 hours.</p>
+        </article>
+        <article>
+          <h3>Easy returns</h3>
+          <p>30-day return window on unused products.</p>
+        </article>
+        <article>
+          <h3>Secure checkout ready</h3>
+          <p>Pure front-end demo flow, no payment required.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-head">
+      <h2>Your Cart</h2>
+      <button id="closeCartBtn" aria-label="Close cart">Close</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-foot">
+      <p>Subtotal: <strong id="cartSubtotal">$0.00</strong></p>
+      <button id="goCartBtn" class="checkout-btn">Go to Cart</button>
+      <p class="small">Demo storefront only. Checkout is a non-payment display flow.</p>
+    </div>
+  </aside>
+
+  <div id="overlay" class="overlay"></div>
+  <script src="./store-data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

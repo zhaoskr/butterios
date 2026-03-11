@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Success | Butterios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="announcement">Order Complete | Demo Mode</header>
+  <main class="success-wrap">
+    <section class="flow-card success-card">
+      <h1>Thank you for your order</h1>
+      <p id="orderIdText">Order ID: --</p>
+      <p>Your demo checkout has been submitted successfully. No payment was charged.</p>
+      <div class="success-actions">
+        <a class="checkout-btn link-btn" href="./index.html">Back to Home</a>
+        <a class="chip" href="./cart.html">View Cart</a>
+      </div>
+    </section>
+  </main>
+  <script>
+    const id = new URLSearchParams(window.location.search).get("orderId") || "BT-DEMO";
+    document.getElementById("orderIdText").textContent = `Order ID: ${id}`;
+  </script>
+</body>
+</html>
