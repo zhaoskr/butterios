@@ -49,6 +49,7 @@ function renderProducts() {
     card.className = "product";
     card.style.animationDelay = `${i * 35}ms`;
     card.innerHTML = `
+      <img class="product-image" src="${p.image}" alt="${p.name}" loading="lazy" />
       <span class="tag">${p.badge}</span>
       <h3>${p.name}</h3>
       <p>${p.category}</p>
@@ -93,7 +94,10 @@ function renderCart() {
     const row = document.createElement("div");
     row.className = "cart-item";
     row.innerHTML = `
-      <strong>${item.name}</strong>
+      <div class="item-row">
+        <img class="thumb" src="${item.image}" alt="${item.name}" />
+        <strong>${item.name}</strong>
+      </div>
       <div class="cart-meta">
         <span>${window.toUSD(item.price)}</span>
         <div class="qty">

@@ -26,8 +26,11 @@ function renderItems(items) {
   checkoutItems.innerHTML = "";
   items.forEach((item) => {
     const line = document.createElement("div");
-    line.className = "summary-row";
-    line.innerHTML = `<span>${item.name} x ${item.qty}</span><strong>${window.toUSD(item.total)}</strong>`;
+    line.className = "summary-row summary-item";
+    line.innerHTML = `
+      <span class="item-row"><img class="thumb" src="${item.image}" alt="${item.name}" /> ${item.name} x ${item.qty}</span>
+      <strong>${window.toUSD(item.total)}</strong>
+    `;
     checkoutItems.appendChild(line);
   });
 }

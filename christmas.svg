@@ -1,0 +1,18 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1f3c72"/>
+      <stop offset="100%" stop-color="#2a5298"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <g fill="#ffd86b">
+    <circle cx="190" cy="120" r="4"/><circle cx="240" cy="70" r="5"/><circle cx="320" cy="100" r="3"/>
+    <circle cx="620" cy="90" r="4"/><circle cx="700" cy="130" r="3"/><circle cx="560" cy="60" r="5"/>
+  </g>
+  <polygon points="400,120 430,190 505,198 448,247 464,320 400,282 336,320 352,247 295,198 370,190" fill="#f6cb4b"/>
+  <rect x="220" y="355" width="360" height="130" rx="20" fill="#f4f7ff" opacity="0.93"/>
+  <rect x="240" y="375" width="320" height="90" rx="14" fill="#2e3f7f"/>
+  <text x="400" y="430" text-anchor="middle" font-family="Georgia, serif" font-size="48" fill="#f7f0dc">Merry</text>
+  <text x="400" y="105" text-anchor="middle" font-family="Georgia, serif" font-size="52" fill="#ffffff">Christmas Lights</text>
+</svg>

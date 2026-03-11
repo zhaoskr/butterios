@@ -1,0 +1,16 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#2f2f2f"/>
+      <stop offset="100%" stop-color="#5b2a2f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <circle cx="270" cy="340" r="110" fill="#ff8f3b"/>
+  <path d="M230 360 q40 -35 80 0" stroke="#4b2d21" stroke-width="8" fill="none"/>
+  <path d="M250 320 q20 -20 40 0 M280 320 q20 -20 40 0" stroke="#4b2d21" stroke-width="8" fill="none"/>
+  <rect x="255" y="205" width="30" height="40" rx="6" fill="#6f4f1d"/>
+  <circle cx="520" cy="320" r="95" fill="#ffffff" opacity="0.12"/>
+  <path d="M520 225 v190 M425 320 h190" stroke="#ffffff" stroke-width="14" opacity="0.5"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Georgia, serif" font-size="54" fill="#fff">Halloween Vibes</text>
+</svg>

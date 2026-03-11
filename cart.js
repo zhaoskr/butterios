@@ -38,7 +38,10 @@ function render() {
     const row = document.createElement("div");
     row.className = "cart-item";
     row.innerHTML = `
-      <strong>${item.name}</strong>
+      <div class="item-row">
+        <img class="thumb" src="${item.image}" alt="${item.name}" />
+        <strong>${item.name}</strong>
+      </div>
       <div class="cart-meta">
         <span>${item.category}</span>
         <span>${window.toUSD(item.price)}</span>
